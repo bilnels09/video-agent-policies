@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Video Agent</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        .last-updated {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        .contact {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last Updated: November 17, 2025</p>
+
+    <div class="highlight">
+        <strong>Summary:</strong> Video Agent is a self-hosted tool. We do not collect, store, or share your personal data. All data processing happens on your own infrastructure using your own API keys.
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains how Video Agent ("we," "our," or "the Service") handles information when you use our automated video creation tool.</p>
+    <p><strong>Important:</strong> Video Agent is designed to be self-hosted. We do not operate centralized servers that collect your data.</p>
+
+    <h2>2. Information We Do NOT Collect</h2>
+    <p>Because Video Agent is self-hosted, we do not collect:</p>
+    <ul>
+        <li>Personal identification information</li>
+        <li>Email addresses or contact information</li>
+        <li>Payment information</li>
+        <li>Usage analytics or tracking data</li>
+        <li>Content you create</li>
+        <li>API keys or credentials</li>
+        <li>Social media account information</li>
+    </ul>
+
+    <h2>3. Data Processing</h2>
+    <p>When you use Video Agent, data is processed as follows:</p>
+
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Data Processed</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>Reddit API</td>
+            <td>Public post content</td>
+            <td>Source material for videos</td>
+        </tr>
+        <tr>
+            <td>AWS Bedrock</td>
+            <td>Text prompts, scripts</td>
+            <td>AI content generation</td>
+        </tr>
+        <tr>
+            <td>Revid.ai</td>
+            <td>Video scripts</td>
+            <td>Video rendering</td>
+        </tr>
+        <tr>
+            <td>Social Media APIs</td>
+            <td>Videos, captions, metadata</td>
+            <td>Content distribution</td>
+        </tr>
+    </table>
+
+    <p><strong>Note:</strong> All data processing uses YOUR API keys and accounts. Data is sent directly from your system to these third-party services.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>Video Agent integrates with third-party services. Each service has its own privacy policy:</p>
+    <ul>
+        <li><strong>Reddit:</strong> <a href="https://www.reddit.com/policies/privacy-policy">Reddit Privacy Policy</a></li>
+        <li><strong>AWS:</strong> <a href="https://aws.amazon.com/privacy/">AWS Privacy Notice</a></li>
+        <li><strong>Revid.ai:</strong> <a href="https://revid.ai/privacy">Revid.ai Privacy Policy</a></li>
+        <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/legal/privacy-policy">TikTok Privacy Policy</a></li>
+        <li><strong>YouTube:</strong> <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><strong>Instagram:</strong> <a href="https://help.instagram.com/519522125107875">Instagram Privacy Policy</a></li>
+    </ul>
+
+    <h2>5. Data Storage</h2>
+    <p>All data is stored locally on your system:</p>
+    <ul>
+        <li><strong>Configuration:</strong> Stored in <code>.env</code> file on your machine</li>
+        <li><strong>Videos:</strong> Saved to <code>output/videos/</code> directory</li>
+        <li><strong>Metadata:</strong> Saved as JSON files locally</li>
+        <li><strong>Logs:</strong> Stored locally in <code>output/cost_log.json</code></li>
+        <li><strong>Credentials:</strong> Stored in your <code>.env</code> file (never transmitted to us)</li>
+    </ul>
+
+    <h2>6. Data Security</h2>
+    <p>You are responsible for securing your data:</p>
+    <ul>
+        <li>Keep your <code>.env</code> file secure and never commit it to version control</li>
+        <li>Use strong passwords for all API accounts</li>
+        <li>Regularly rotate API keys and credentials</li>
+        <li>Keep your system and dependencies updated</li>
+        <li>Use secure network connections</li>
+    </ul>
+
+    <h2>7. API Keys and Credentials</h2>
+    <p>Video Agent requires you to provide API keys for:</p>
+    <ul>
+        <li>Reddit API</li>
+        <li>AWS Bedrock</li>
+        <li>Revid.ai</li>
+        <li>Social media platforms (optional)</li>
+    </ul>
+    <p><strong>Important:</strong> These credentials are stored locally on your machine and are never sent to us. You are responsible for keeping them secure.</p>
+
+    <h2>8. Content You Create</h2>
+    <p>Content created using Video Agent:</p>
+    <ul>
+        <li>Is owned by you</li>
+        <li>Is stored on your local system</li>
+        <li>May be sent to third-party services (Revid.ai, social media platforms) based on your configuration</li>
+        <li>Is subject to the terms of service of platforms where you post it</li>
+    </ul>
+
+    <h2>9. Cookies and Tracking</h2>
+    <p>Video Agent does not use cookies or tracking technologies. If you host these policy pages on a website, standard web server logs may be collected by your hosting provider.</p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>Video Agent is not intended for use by children under 13. We do not knowingly collect information from children.</p>
+
+    <h2>11. International Data Transfers</h2>
+    <p>When you use third-party services through Video Agent, your data may be transferred to and processed in different countries. Each service's privacy policy governs these transfers.</p>
+
+    <h2>12. Your Rights</h2>
+    <p>Because all data is stored locally on your system, you have complete control:</p>
+    <ul>
+        <li><strong>Access:</strong> All data is in your <code>output/</code> directory</li>
+        <li><strong>Deletion:</strong> Delete files from your system at any time</li>
+        <li><strong>Portability:</strong> All data is in standard formats (JSON, MP4)</li>
+        <li><strong>Correction:</strong> Edit configuration files directly</li>
+    </ul>
+
+    <h2>13. Data Retention</h2>
+    <p>You control data retention:</p>
+    <ul>
+        <li>Videos and metadata are kept until you delete them</li>
+        <li>Logs are kept until you clear them</li>
+        <li>No automatic deletion or retention policies</li>
+    </ul>
+
+    <h2>14. Changes to Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date.</p>
+
+    <h2>15. Open Source</h2>
+    <p>Video Agent is open source software. You can review the code to verify our privacy practices:</p>
+    <ul>
+        <li>GitHub: https://github.com/bilnels09/video-agent-policies</li>
+        <li>All code is publicly auditable</li>
+        <li>No hidden data collection</li>
+    </ul>
+
+    <h2>16. Compliance</h2>
+    <p>As a self-hosted tool, compliance with data protection regulations (GDPR, CCPA, etc.) is your responsibility. We provide the tools; you control the data.</p>
+
+    <h2>17. Third-Party Analytics</h2>
+    <p>Video Agent does not include any analytics or telemetry. We do not track usage, errors, or any other metrics.</p>
+
+    <div class="contact">
+        <h2>Contact Information</h2>
+        <p>For questions about this Privacy Policy, please contact:</p>
+        <p><strong>Email:</strong> privacy@videoagent.example.com</p>
+        <p><strong>GitHub:</strong> https://github.com/bilnels09/video-agent-policies</p>
+    </div>
+
+    <hr style="margin-top: 40px; border: none; border-top: 1px solid #ddd;">
+    <p style="text-align: center; color: #7f8c8d; font-size: 14px;">
+        © 2025 Video Agent. All rights reserved.
+    </p>
+</body>
+</html>
